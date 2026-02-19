@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Home Compass</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">newhomecompass.com</p>
+        <h1>Yearly Home Maintenance for New Construction Owners</h1>
+        <p>
+          Get practical, season-aware maintenance guidance tailored to your state so your home stays protected year-round.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls card">
+        <h2>Build your maintenance plan</h2>
+        <p>Select your state and month to see what to prioritize right now.</p>
+        <div class="control-grid">
+          <label>
+            State
+            <select id="stateSelect"></select>
+          </label>
+          <label>
+            Month
+            <select id="monthSelect"></select>
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Your monthly priorities</h2>
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>State climate guidance</h2>
+        <p id="stateTip"></p>
+      </section>
+
+      <section class="card">
+        <h2>State-specific yearly maintenance checklist</h2>
+        <p class="section-intro">Use this annual checklist as your once-a-year baseline in addition to monthly tasks.</p>
+        <ul id="yearlyChecklist" class="task-list"></ul>
+      </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
